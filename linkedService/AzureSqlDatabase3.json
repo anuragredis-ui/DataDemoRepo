@@ -1,0 +1,27 @@
+{
+	"name": "AzureSqlDatabase3",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"parameters": {
+			"username": {
+				"type": "string",
+				"defaultValue": "anurag"
+			},
+			"passwd": {
+				"type": "string",
+				"defaultValue": "Azure@123"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "doitforyourself.database.windows.net",
+			"database": "d-a-t-b-a-s-e",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "@{linkedService().username}",
+			"password": "@{linkedService().passwd}"
+		}
+	}
+}

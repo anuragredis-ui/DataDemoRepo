@@ -1,0 +1,15 @@
+{
+	"name": "AzureDataFactoryNashik",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Enabled",
+			"editable": true
+		}
+	},
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "17a4657d-1ad4-4f51-b199-06ee78f5e9fc",
+		"tenantId": "8cecd95d-74ce-4b22-ae2a-6a15305ecceb"
+	}
+}
